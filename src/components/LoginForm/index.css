@@ -1,0 +1,92 @@
+/* Write your CSS code here */
+
+* {
+  box-sizing: border-box;
+}
+
+.websiteLogoImageDisplay {
+  display: none;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .websiteLoginImage {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+  .websiteLogoImage {
+    display: none;
+  }
+  .websiteLogoImageDisplay {
+    display: flex;
+    width: 150px;
+    padding-bottom: 35px;
+  }
+}
+
+.websiteLoginImage {
+  height: 250px;
+}
+
+.websiteLogoImage {
+  width: 150px;
+  align-self: center;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  height: 300px;
+  width: 300px;
+  padding: 12px;
+}
+
+.formContainer {
+  padding: 12px;
+}
+
+.inputs {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 6px;
+  background-color: #d7dfe9;
+  border: none;
+  font-family: 'Roboto';
+  width: 100%;
+  outline: none;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 6px;
+  background-color: #0967d2;
+  color: #ffffffff;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.errorPara {
+  color: #ff0b37;
+  font-size: 12px;
+  font-family: 'Roboto';
+}

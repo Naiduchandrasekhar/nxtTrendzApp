@@ -1,0 +1,79 @@
+/* Write your CSS code here */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding: 15px;
+}
+
+.navLogo {
+  width: 160px;
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+.navListLarge {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .navListLarge {
+    display: none;
+  }
+}
+
+.logoutBtn {
+  background-color: #0b69ff;
+  color: #ffffff;
+  padding: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.navLogOutImg {
+  height: 26px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navLogOutImg {
+    display: flex;
+  }
+  .navLogo {
+    width: 130px;
+    margin-left: 0px;
+  }
+  .allNavImages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e6f6ff;
+    padding: 15px;
+  }
+}
+
+.navImagesClass {
+  height: 25px;
+}
+
+@media screen and (min-width: 769px) {
+  .allNavImages {
+    display: none;
+  }
+}

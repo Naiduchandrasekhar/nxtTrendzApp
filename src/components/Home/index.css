@@ -1,0 +1,82 @@
+/* Write your CSS code here */
+* {
+  box-sizing: border-box;
+}
+
+.homeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  width: 100vw;
+  min-height: 90vh;
+}
+
+@media screen and (max-width: 768px) {
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .clothesImage {
+    display: none;
+  }
+  .clothesImageDisplay {
+    display: flex;
+    width: 90%;
+  }
+  .headerName {
+    font-size: 24px;
+    font-family: 'Roboto';
+    margin-bottom: 12px;
+  }
+  .para {
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #64748b;
+    padding: 10px;
+  }
+  .imageAndParaContainer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .clothesImageDisplay {
+    display: none;
+  }
+  .headerName {
+    font-size: 40px;
+    font-family: 'Roboto';
+    padding-bottom: 12px;
+  }
+  .para {
+    font-size: 18px;
+    font-family: 'Roboto';
+    color: #64748b;
+    padding: 10px;
+  }
+}
+
+.imageAndParaContainer {
+  width: 50%;
+}
+
+.clothesImage {
+  height: 450px;
+  width: 450px;
+}
+
+.shopNowBtn {
+  background-color: #0b69ff;
+  color: #ffffff;
+  font-family: 'Roboto';
+  padding: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 120px;
+}
